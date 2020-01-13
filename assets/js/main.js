@@ -99,3 +99,7 @@ function fechaCep(event) {
 
 
 /*Realiza pesquisa a partir da rua*/
+const ruaPesq = document.querySelector('.ruapesq');
+const bairroPesq = document.querySelector('.bairropesq');
+
+formulario.addEventListener('submit', procuraCep);
