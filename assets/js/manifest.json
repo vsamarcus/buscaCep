@@ -1,0 +1,11 @@
+{
+  "name": "Consulta CEP",
+  "description": "Consulta de CEP do Brasil",
+  "version": "1.0.3",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": "./earth-globe-world.png",
+    "default_popup": "window.html"
+  },
+  "permissions": ["activeTab"]
+}

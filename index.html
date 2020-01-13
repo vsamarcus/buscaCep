@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Verifica CEP</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- Adicionando Javascript -->
+
+
+    <!--Adicionando CSS-->
+    <link rel="stylesheet" href="../Consulta CEP/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../Consulta CEP/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <!-- Inicio do formulario -->
+    <div class="container">
+        <nav class="navbar bg-primary text-white">
+            <span class="navbar-text">
+                <p class="h3">BUSCA CEP</p>
+            </span>
+            <img src="../Consulta CEP/assets/images/earth-globe-world.png" style="width: 30px;" alt="">
+        </nav>
+        <div class="jumbotron">
+            <form id="formulario">
+                <div class="form-group">
+                    <label>CEP</label>
+                    <input type="text" class="form-control" name="buscaCep" id="cep"
+                        placeholder="Informe o CEP para consulta...">
+                </div>
+                <button type="submit" class="btn btn-outline-secondary" id="pesquisaCep">Pesquisar</button>
+            </form>
+        </div>
+        <div id="apresentaCep"></div>
+    </div>
+</body>
+<script src="../Consulta CEP/assets/js/main.js"></script>
+<script src="./vanillamasker.js"></script>
+
+</html>
