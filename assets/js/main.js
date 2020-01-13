@@ -9,11 +9,8 @@ const mensagem = {
     "zipcode_erro": "Ocorreu um erro ao realizar a consulta do CEP, tente novamente.",
 };
 
-
-
 /*Evita o envio do formulário*/
 formulario.addEventListener('submit', procuraCep);
-
 document.querySelector("body").addEventListener("click", fechaCep);
 
 /*Pesquisando dados no WebService*/
@@ -99,3 +96,6 @@ function fechaCep(event) {
         $cep.focus();
     }
 };
+
+
+/*Realiza pesquisa a partir da rua*/

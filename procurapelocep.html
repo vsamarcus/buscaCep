@@ -25,13 +25,29 @@
         </nav>
 
         <div class="jumbotron">
-            <form>
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-sm-2 col-form-label">Rua</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="colFormLabel" placeholder="Informe o nome da rua...">
+            <form id="formulario">
+                <div class="col-auto">
+
+                    <!--Rua-->
+                    <label class="sr-only" for="inlineFormInputGroup">Rua</label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">Rua</div>
+                      </div>
+                      <input type="text" class="form-control" id="ruapesq inlineFormInputGroup" placeholder="Informe a rua para pesquisa">
                     </div>
-                </div>
+
+                    <!--Logradouro-->
+                    <label class="sr-only" for="inlineFormInputGroup">Logradouro</label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">Bairro</div>
+                      </div>
+                      <input type="text" class="form-control" id="bairropesq inlineFormInputGroup" placeholder="Informe o bairro para pesquisa">
+                    </div>
+
+                  </div>
+
             </form>
         </div>
         <div id="apresentaCep"></div>
