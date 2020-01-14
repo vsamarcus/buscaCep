@@ -9,13 +9,14 @@ const mensagem = {
     "zipcode_erro": "Ocorreu um erro ao realizar a consulta do CEP, tente novamente.",
 };
 
+
 /*Evita o envio do formulário*/
 formulario.addEventListener('submit', procuraCep);
 document.querySelector("body").addEventListener("click", fechaCep);
 
 /*Pesquisando dados no WebService*/
 function procuraCep(e) {
-    e.preventDefault();
+
 
     if (!validaCep($cep.value)) {
         apresentaCep.innerHTML = `
@@ -28,7 +29,7 @@ function procuraCep(e) {
         throw Error(mensagem.zipcode_invalido);
     }
 
-    fetch(`https://viacep.com.br/ws/${cep.value}/json/`)
+    fetch(`https://viacep.com.br/ws/${$cep.value}/json/`)
         .then(response => {
 
             if (response.status != 200) {
@@ -82,6 +83,7 @@ function procuraCep(e) {
             }
         })
         .catch(err => console.warn(err));
+    e.preventDefault();
 };
 
 /*Valida a informação digitada*/
@@ -98,8 +100,3 @@ function fechaCep(event) {
 };
 
 
-/*Realiza pesquisa a partir da rua*/
-const ruaPesq = document.querySelector('.ruapesq');
-const bairroPesq = document.querySelector('.bairropesq');
-
-formulario.addEventListener('submit', procuraCep);

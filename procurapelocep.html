@@ -1,58 +1,74 @@
 <html>
-
 <head>
-    <title>Verifica CEP</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Verifica CEP</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <!-- Adicionando Javascript -->
+  <!-- Adicionando Javascript -->
 
 
-    <!--Adicionando CSS-->
-    <link rel="stylesheet" href="./assets/css/bootstrap.css">
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <!--Adicionando CSS-->
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
 
 <body>
-    <!-- Inicio do formulario -->
-    <div class="container">
-        <nav class="navbar bg-primary text-white">
-            <span class="navbar-text">
-                <p class="h3">BUSCA CEP</p>
-            </span>
-            <img src="./assets/images/earth-globe-world.png" style="width: 30px;" alt="">
-        </nav>
+  <!-- Inicio do formulario -->
+  <div class="container">
+    <nav class="navbar bg-primary text-white">
+      <span class="navbar-text">
+        <p class="h3">BUSCA CEP</p>
+      </span>
+      <img src="./assets/images/earth-globe-world.png" style="width: 30px;" alt="">
+    </nav>
 
-        <div class="jumbotron">
-            <form id="formulario">
-                <div class="col-auto">
+    <div class="jumbotron">
+      <form id="form">
+        <div class="col-auto">
 
-                    <!--Rua-->
-                    <label class="sr-only" for="inlineFormInputGroup">Rua</label>
-                    <div class="input-group mb-2">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text">Rua</div>
-                      </div>
-                      <input type="text" class="form-control" id="ruapesq inlineFormInputGroup" placeholder="Informe a rua para pesquisa">
-                    </div>
+          <!--Rua-->
+          <label class="sr-only" for="inlineFormInputGroup">Rua</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">Rua</div>
+            </div>
+            <input type="text" class="form-control" id="ruapesq inlineFormInputGroup"
+              placeholder="Informe a rua para pesquisa">
+          </div>
 
-                    <!--Logradouro-->
-                    <label class="sr-only" for="inlineFormInputGroup">Logradouro</label>
-                    <div class="input-group mb-2">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text">Bairro</div>
-                      </div>
-                      <input type="text" class="form-control" id="bairropesq inlineFormInputGroup" placeholder="Informe o bairro para pesquisa">
-                    </div>
+          <!--Logradouro-->
+          <label class="sr-only" for="inlineFormInputGroup">Cidade</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">Cidade</div>
+            </div>
+            <input type="text" class="form-control" id="cidadepesq inlineFormInputGroup"
+              placeholder="Informe o cidade para pesquisa">
+          </div>
 
-                  </div>
+          <label class="sr-only" for="inlineFormInputGroup">UF</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">UF</div>
+            </div>
+            <input type="text" class="form-control" id="ufpesq inlineFormInputGroup"
+              placeholder="Informe a UF para pesquisa">
+          </div>
 
-            </form>
+
+
+          <div class="col">
+            <button type="submit" class="btn btn-outline-secondary" id="pesquisaCep">Pesquisar</button>
+          </div>
         </div>
-        <div id="apresentaCep"></div>
-    </div>
-</body>
-<script src="./assets/js/main.js"></script>
 
-</html>
+      </form>
+    </div>
+    <div id="apresentaCepRua"></div>
+  </div>
+</body>
+<script src="./assets/js/ceppelarua.js"></script>
+
+</html
+>
